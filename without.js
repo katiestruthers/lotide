@@ -22,7 +22,6 @@ const assertArraysEqual = function(actual, expected) {
 
 const without = function(source, itemsToRemove) {
   const returnArr = [];
-  let found;
 
   for (let i = 0; i < source.length; i++) {
     if (!itemsToRemove.includes(source[i])) {
