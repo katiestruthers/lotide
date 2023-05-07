@@ -21,11 +21,11 @@ const eqArrays = function(arr1, arr2) {
 };
 
 // testing
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), true); // => false
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
 
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true); // => false
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
 
-assertEqual(eqArrays([], []), true); // => true
-assertEqual(eqArrays([], [1]), true); // => false
+assertEqual(eqArrays([], []), true);
+assertEqual(eqArrays([], [1]), false);
