@@ -42,3 +42,5 @@ assertArraysEqual(without([], [1, 2, 3]), []);
 const numbers = [1, 2, 3];
 without(numbers, [1]);
 assertArraysEqual(numbers, [1, 2, 3]);
+
+module.exports = without;

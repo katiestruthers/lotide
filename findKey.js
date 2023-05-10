@@ -27,4 +27,4 @@ assertEqual(findKey(test1, x => x.stars === 2), "noma");
 assertEqual(findKey(test1, x => x.stars > 2), "Akaleri");
 assertEqual(findKey(test1, x => x.stars === 4), undefined);
 
-
+module.exports = findKey;
